@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="eJT-7C-HCy">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Naval Leadership Weekend-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="NLWViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V4P-xT-JI5"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Vf-PT-hkE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Naval Leadership Weekend" id="bcz-5Z-55u">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="gyr-u9-7AK"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="PCr-yE-vip" kind="push" identifier="MAP" id="tRU-04-yst"/>
+                        <segue destination="MYE-KT-UB3" kind="push" identifier="CONTACTS" id="G1U-z7-cvZ"/>
+                        <segue destination="71e-lx-XdZ" kind="push" identifier="SCHEDULE" id="KNg-QM-6dC"/>
+                        <segue destination="jYE-7L-bCc" kind="push" identifier="INFORMATION" id="vwy-r7-dIn"/>
+                        <segue destination="SEq-mc-mvY" kind="push" identifier="ND" id="gGm-Np-10y"/>
+                        <segue destination="3Gj-T8-IIb" kind="push" identifier="SPEAKERS" id="AcB-Hd-asm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1491" y="-1893"/>
+        </scene>
+        <!--Unit View Controller - NROTC Notre Dame-->
+        <scene sceneID="fDh-96-qHy">
+            <objects>
+                <viewController id="SEq-mc-mvY" customClass="NLWUnitViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cPt-Ey-WRu"/>
+                        <viewControllerLayoutGuide type="bottom" id="OWQ-8T-Iau"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1By-I8-Bz6">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.70588235294117641" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="NROTC Notre Dame" id="w9D-Gf-foG"/>
+                    <connections>
+                        <segue destination="whW-yx-zzq" kind="push" identifier="unitDetail" id="Gc8-B6-DSt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9si-eQ-wzW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2506" y="-4003"/>
+        </scene>
+        <!--Unit Detail View Controller-->
+        <scene sceneID="zOs-ov-TlS">
+            <objects>
+                <viewController id="whW-yx-zzq" customClass="NLWUnitDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="em6-X6-Hlb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2oL-hY-tf6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5qc-Ah-xUG">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6T-Vx-5qn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.86274509803921573" green="0.70588235294117641" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.70588235294117641" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="j6T-Vx-5qn" firstAttribute="trailing" secondItem="5qc-Ah-xUG" secondAttribute="trailing" id="BwY-x5-D69"/>
+                            <constraint firstItem="j6T-Vx-5qn" firstAttribute="top" secondItem="5qc-Ah-xUG" secondAttribute="top" id="P2f-TB-FCN"/>
+                            <constraint firstItem="j6T-Vx-5qn" firstAttribute="leading" secondItem="5qc-Ah-xUG" secondAttribute="leading" id="cps-wS-pNU"/>
+                            <constraint firstItem="j6T-Vx-5qn" firstAttribute="bottom" secondItem="5qc-Ah-xUG" secondAttribute="bottom" id="ub7-u3-VZz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z1t-JU-H2L"/>
+                    <connections>
+                        <outlet property="descriptionWebView" destination="j6T-Vx-5qn" id="DR0-zf-XcV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJF-E2-mcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2971" y="-4003"/>
+        </scene>
+        <!--Map View Controller - MAP-->
+        <scene sceneID="Abm-ax-1XA">
+            <objects>
+                <viewController id="PCr-yE-vip" customClass="NLWMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qWQ-CI-b3z"/>
+                        <viewControllerLayoutGuide type="bottom" id="t2G-9p-Xo0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QCs-Gn-3Th">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAP LOADING..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQE-lf-aUb">
+                                <rect key="frame" x="93" y="242" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="CZ0-bc-5km">
+                                <rect key="frame" x="142" y="197" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9nS-7g-Jga">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.70588235294117641" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="uQE-lf-aUb" secondAttribute="centerX" id="1WC-Hh-E5w"/>
+                            <constraint firstAttribute="centerX" secondItem="uQE-lf-aUb" secondAttribute="centerX" id="5Fe-m4-ekK"/>
+                            <constraint firstItem="9nS-7g-Jga" firstAttribute="bottom" secondItem="QCs-Gn-3Th" secondAttribute="bottom" id="5I4-yl-Lk8"/>
+                            <constraint firstAttribute="centerY" secondItem="uQE-lf-aUb" secondAttribute="centerY" id="9Kd-L3-Tep"/>
+                            <constraint firstItem="9nS-7g-Jga" firstAttribute="trailing" secondItem="QCs-Gn-3Th" secondAttribute="trailing" id="ACx-RY-NyZ"/>
+                            <constraint firstItem="uQE-lf-aUb" firstAttribute="top" secondItem="CZ0-bc-5km" secondAttribute="bottom" constant="8" symbolic="YES" id="b39-b8-b9A"/>
+                            <constraint firstAttribute="centerX" secondItem="CZ0-bc-5km" secondAttribute="centerX" id="c6E-Iw-NOk"/>
+                            <constraint firstItem="9nS-7g-Jga" firstAttribute="top" secondItem="QCs-Gn-3Th" secondAttribute="top" id="kPK-3u-HBX"/>
+                            <constraint firstItem="9nS-7g-Jga" firstAttribute="leading" secondItem="QCs-Gn-3Th" secondAttribute="leading" id="ysJ-dA-K1l"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="MAP" id="Ndg-SF-6ZP"/>
+                    <connections>
+                        <outlet property="map" destination="9nS-7g-Jga" id="5DX-XG-S80"/>
+                        <outlet property="spinner" destination="CZ0-bc-5km" id="BTV-9a-UiA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hGG-sa-fgy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2506" y="-3337"/>
+        </scene>
+        <!--Schedule Table View Controller - SCHEDULE-->
+        <scene sceneID="Fth-Wz-vZL">
+            <objects>
+                <tableViewController id="71e-lx-XdZ" customClass="NLWScheduleTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="RqZ-8J-jUP">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.8627451062" green="0.70588237050000002" blue="0.22352941330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.0" green="0.16862745583057404" blue="0.36078432202339172" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Event Cell" id="LTV-pZ-PPe">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LTV-pZ-PPe" id="Lxb-Na-2LV">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.86274510622024536" green="0.70588237047195435" blue="0.22352941334247589" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="71e-lx-XdZ" id="2oP-Kw-2Mf"/>
+                            <outlet property="delegate" destination="71e-lx-XdZ" id="Jdl-nW-BG5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="SCHEDULE" id="P7y-fB-mfD"/>
+                    <connections>
+                        <segue destination="RI5-Kx-KRp" kind="push" identifier="Event Detail" id="W2M-PJ-AfE"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZHy-kM-2Nz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2506" y="-2605"/>
+        </scene>
+        <!--Schedule Detail View Controller - Event-->
+        <scene sceneID="JYl-uB-NLz">
+            <objects>
+                <viewController id="RI5-Kx-KRp" customClass="NLWScheduleDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OnD-tV-mze"/>
+                        <viewControllerLayoutGuide type="bottom" id="oJU-jz-hpA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="82Y-J0-9NS">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awB-JT-vrZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="awB-JT-vrZ" firstAttribute="bottom" secondItem="82Y-J0-9NS" secondAttribute="bottom" id="Jfn-DQ-C4Z"/>
+                            <constraint firstItem="awB-JT-vrZ" firstAttribute="trailing" secondItem="82Y-J0-9NS" secondAttribute="trailing" id="Ydp-dn-Acd"/>
+                            <constraint firstItem="awB-JT-vrZ" firstAttribute="top" secondItem="82Y-J0-9NS" secondAttribute="top" id="f0A-KK-vl2"/>
+                            <constraint firstItem="awB-JT-vrZ" firstAttribute="leading" secondItem="82Y-J0-9NS" secondAttribute="leading" id="ufD-w1-vWB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Event" id="rNo-Kx-1dT"/>
+                    <connections>
+                        <outlet property="descriptionWebView" destination="awB-JT-vrZ" id="tsS-Yr-4CJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xUf-k5-CYN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3038" y="-2605"/>
+        </scene>
+        <!--Contacts View Controller - CONTACTS-->
+        <scene sceneID="i8Y-RM-NKJ">
+            <objects>
+                <viewController id="MYE-KT-UB3" customClass="NLWContactsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aAE-Az-pwo"/>
+                        <viewControllerLayoutGuide type="bottom" id="DEQ-uA-4I6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yrQ-GC-0J3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTACTS LOADING..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNC-q8-HiQ">
+                                <rect key="frame" x="67" y="242" width="187" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="x7S-bP-5Zn">
+                                <rect key="frame" x="142" y="197" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Zh-oC-cqs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.86274509803921573" green="0.70588235294117641" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.70588235294117641" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Zh-oC-cqs" firstAttribute="leading" secondItem="yrQ-GC-0J3" secondAttribute="leading" id="6XS-l9-mOD"/>
+                            <constraint firstItem="0Zh-oC-cqs" firstAttribute="bottom" secondItem="yrQ-GC-0J3" secondAttribute="bottom" id="7Vc-1l-YI5"/>
+                            <constraint firstAttribute="centerY" secondItem="hNC-q8-HiQ" secondAttribute="centerY" id="7oq-sl-P9f"/>
+                            <constraint firstAttribute="centerX" secondItem="hNC-q8-HiQ" secondAttribute="centerX" id="A4j-Yp-7Hr"/>
+                            <constraint firstItem="hNC-q8-HiQ" firstAttribute="top" secondItem="x7S-bP-5Zn" secondAttribute="bottom" constant="8" symbolic="YES" id="AWl-7z-HIk"/>
+                            <constraint firstItem="0Zh-oC-cqs" firstAttribute="trailing" secondItem="yrQ-GC-0J3" secondAttribute="trailing" id="WE4-Xu-W6l"/>
+                            <constraint firstAttribute="centerX" secondItem="x7S-bP-5Zn" secondAttribute="centerX" id="f0d-R9-4m4"/>
+                            <constraint firstItem="0Zh-oC-cqs" firstAttribute="top" secondItem="yrQ-GC-0J3" secondAttribute="top" id="sGt-2h-SDg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="CONTACTS" id="xTj-tn-ylq"/>
+                    <connections>
+                        <outlet property="contactsWebView" destination="0Zh-oC-cqs" id="vD6-yt-XGJ"/>
+                        <outlet property="waitingSpinner" destination="x7S-bP-5Zn" id="5Ml-VV-eHH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A4k-o3-LlV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2506" y="-476"/>
+        </scene>
+        <!--Information View Controller - INFORMATION-->
+        <scene sceneID="S8a-mL-vZ1">
+            <objects>
+                <viewController id="jYE-7L-bCc" customClass="NLWInformationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="abB-8x-UEQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="YLp-OI-RkL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2UF-Fx-LFK">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="INFORMATION" id="s8m-SR-YZ0">
+                        <barButtonItem key="backBarButtonItem" title="INFO" id="DBC-Ax-iFC"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="RAp-Y7-cXC" kind="push" identifier="POLICIES" id="Olg-kM-w2s"/>
+                        <segue destination="3nt-Gl-aif" kind="push" identifier="LOCAL ATTRACTIONS" id="nka-Bq-BXt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="scX-OH-CFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2506" y="-1893"/>
+        </scene>
+        <!--Speakers View Controller - SPEAKERS-->
+        <scene sceneID="quY-nD-FqV">
+            <objects>
+                <viewController id="3Gj-T8-IIb" customClass="NLWSpeakersViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n1s-ya-c4c"/>
+                        <viewControllerLayoutGuide type="bottom" id="FPF-iZ-Ofo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ttW-S7-7um">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="rRC-EW-Bck">
+                                <rect key="frame" x="142" y="234" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.70588235294117641" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="rRC-EW-Bck" firstAttribute="centerX" secondItem="ttW-S7-7um" secondAttribute="centerX" id="ZoP-cl-T73"/>
+                            <constraint firstItem="rRC-EW-Bck" firstAttribute="centerY" secondItem="ttW-S7-7um" secondAttribute="centerY" id="spt-AS-lT1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SPEAKERS" id="cPN-N5-3RG"/>
+                    <connections>
+                        <outlet property="spinner" destination="rRC-EW-Bck" id="1eI-e0-flM"/>
+                        <segue destination="Qn1-S7-FeF" kind="push" identifier="Speakers Detail" id="sxO-kD-Jeg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1as-wj-BaM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2506" y="-1191"/>
+        </scene>
+        <!--Speaker Detail View Controller-->
+        <scene sceneID="8uw-hS-0yw">
+            <objects>
+                <viewController id="Qn1-S7-FeF" customClass="NLWSpeakerDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EMW-4H-lSd"/>
+                        <viewControllerLayoutGuide type="bottom" id="dNI-qn-6sw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xdj-Fy-RdJ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zzJ-FB-zGj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zzJ-FB-zGj" firstAttribute="leading" secondItem="xdj-Fy-RdJ" secondAttribute="leading" id="JA5-av-4Wj"/>
+                            <constraint firstItem="zzJ-FB-zGj" firstAttribute="bottom" secondItem="xdj-Fy-RdJ" secondAttribute="bottom" id="QNG-6C-NXY"/>
+                            <constraint firstItem="zzJ-FB-zGj" firstAttribute="trailing" secondItem="xdj-Fy-RdJ" secondAttribute="trailing" id="gR9-ac-DH3"/>
+                            <constraint firstItem="zzJ-FB-zGj" firstAttribute="top" secondItem="xdj-Fy-RdJ" secondAttribute="top" id="l1F-Eh-Sjv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NaT-Vb-tsQ"/>
+                    <connections>
+                        <outlet property="descriptionWebView" destination="zzJ-FB-zGj" id="cig-Lv-9W6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0UK-tf-sx1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3038" y="-1191"/>
+        </scene>
+        <!--Policies Table View Controller - POLICIES-->
+        <scene sceneID="HiV-j8-sw2">
+            <objects>
+                <tableViewController id="RAp-Y7-cXC" customClass="NLWPoliciesTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qNj-xa-o8X">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.70588235294117641" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.0" green="0.16862745583057404" blue="0.36078432202339172" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Policies Cell" id="iRl-a7-RPj">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iRl-a7-RPj" id="A3F-st-Oal">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.86274510622024536" green="0.70588237047195435" blue="0.22352941334247589" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RAp-Y7-cXC" id="BVM-7K-HHV"/>
+                            <outlet property="delegate" destination="RAp-Y7-cXC" id="WNu-TE-gx6"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="POLICIES" id="j56-zN-hhJ"/>
+                    <connections>
+                        <segue destination="XFg-ct-AHW" kind="push" identifier="Policies Detail" id="TFe-b6-Qdd"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l4C-cp-pLH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3706" y="-2333"/>
+        </scene>
+        <!--Attractions Table View Controller - ATTRACTIONS-->
+        <scene sceneID="vaw-Zg-QaJ">
+            <objects>
+                <tableViewController id="3nt-Gl-aif" customClass="NLWAttractionsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="c8l-z1-ue6">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.70588235294117641" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.0" green="0.16862745583057404" blue="0.36078432202339172" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Attractions Cell" id="f4b-F2-yNk">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f4b-F2-yNk" id="jNG-iN-KUf">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.8627451062" green="0.70588237050000002" blue="0.22352941330000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3nt-Gl-aif" id="n1z-8O-Czu"/>
+                            <outlet property="delegate" destination="3nt-Gl-aif" id="ST5-zp-ydf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="ATTRACTIONS" id="Uhf-zl-12B"/>
+                    <connections>
+                        <segue destination="YyI-wX-VaH" kind="push" identifier="Attractions Detail" id="gre-u2-huf"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rXA-Wu-hqJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3706" y="-1523"/>
+        </scene>
+        <!--Attractions Detail View Controller-->
+        <scene sceneID="eSn-gS-EXV">
+            <objects>
+                <viewController id="YyI-wX-VaH" customClass="NLWAttractionsDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uIr-RP-UcR"/>
+                        <viewControllerLayoutGuide type="bottom" id="bp1-S9-w0a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4nR-r1-dQ1">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8D-8U-D9L">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a8D-8U-D9L" firstAttribute="trailing" secondItem="4nR-r1-dQ1" secondAttribute="trailing" id="6mH-KK-a87"/>
+                            <constraint firstItem="a8D-8U-D9L" firstAttribute="leading" secondItem="4nR-r1-dQ1" secondAttribute="leading" id="nlT-93-H6h"/>
+                            <constraint firstItem="a8D-8U-D9L" firstAttribute="bottom" secondItem="4nR-r1-dQ1" secondAttribute="bottom" id="pgb-Kq-5Av"/>
+                            <constraint firstItem="a8D-8U-D9L" firstAttribute="top" secondItem="4nR-r1-dQ1" secondAttribute="top" id="sdf-JE-kmR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jSL-L8-SKo"/>
+                    <connections>
+                        <outlet property="policiesWebView" destination="a8D-8U-D9L" id="bmG-jA-mRF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EH6-XW-FkZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4238" y="-1523"/>
+        </scene>
+        <!--Policies View Controller-->
+        <scene sceneID="o9c-Cl-C6x">
+            <objects>
+                <viewController id="XFg-ct-AHW" customClass="NLWPoliciesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="02b-Ab-gLc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hjj-mQ-gF5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AWV-6h-bFQ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmi-qW-WaR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mmi-qW-WaR" firstAttribute="top" secondItem="AWV-6h-bFQ" secondAttribute="top" id="5Jf-jE-GBO"/>
+                            <constraint firstItem="mmi-qW-WaR" firstAttribute="trailing" secondItem="AWV-6h-bFQ" secondAttribute="trailing" id="Ivs-dS-LyI"/>
+                            <constraint firstItem="mmi-qW-WaR" firstAttribute="bottom" secondItem="AWV-6h-bFQ" secondAttribute="bottom" id="KSm-3t-2Xa"/>
+                            <constraint firstItem="mmi-qW-WaR" firstAttribute="leading" secondItem="AWV-6h-bFQ" secondAttribute="leading" id="NkK-hg-lLS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="n0V-F9-deh"/>
+                    <connections>
+                        <outlet property="policiesWebView" destination="mmi-qW-WaR" id="6gr-dZ-Ahx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XgK-f9-1t2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4238" y="-2333"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vlw-1Y-EWm">
+            <objects>
+                <navigationController id="eJT-7C-HCy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="jMT-mp-9A7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="Ewq-55-4yM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JEh-yY-ZwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="897" y="-1893"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

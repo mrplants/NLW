@@ -1,0 +1,16 @@
+//
+//  NLWAttractionsDetailViewController.h
+//  NLW
+//
+//  Created by Sean Fitzgerald on 9/8/13.
+//  Copyright (c) 2013 Sean T Fitzgerald. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface NLWAttractionsDetailViewController : UIViewController
+
+@property (nonatomic, strong) NSString * html;
+@property (nonatomic, strong) NSString * header;
+
+@end
